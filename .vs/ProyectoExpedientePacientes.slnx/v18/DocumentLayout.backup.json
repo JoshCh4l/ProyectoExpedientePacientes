@@ -3,32 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Data\\Migrations\\20260607175032_UserChanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Migrations\\20260607175032_UserChanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Migrations\\20260607204058_AmbosModulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260607204058_AmbosModulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Data\\Migrations\\20260607174540_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Migrations\\20260607174540_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\medicamentopaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\medicamentopaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\medicoespecialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\medicoespecialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Data\\Migrations\\20260607203427_AmbosModulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Migrations\\20260607203427_AmbosModulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\notaclinica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\notaclinica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\padecimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\padecimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\padecimientopaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\padecimientopaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\resultadoexamenmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\resultadoexamenmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\tratamiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\tratamiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\tratamientopaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\tratamientopaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\medicamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\medicamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,92 +63,157 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20260607175032_UserChanges.cs",
-              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Data\\Migrations\\20260607175032_UserChanges.cs",
-              "RelativeDocumentMoniker": "Data\\Migrations\\20260607175032_UserChanges.cs",
-              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Data\\Migrations\\20260607175032_UserChanges.cs",
-              "RelativeToolTip": "Data\\Migrations\\20260607175032_UserChanges.cs",
+              "Title": "20260607204058_AmbosModulos.cs",
+              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Migrations\\20260607204058_AmbosModulos.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260607204058_AmbosModulos.cs",
+              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Migrations\\20260607204058_AmbosModulos.cs",
+              "RelativeToolTip": "Migrations\\20260607204058_AmbosModulos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T17:50:32.467Z",
+              "WhenOpened": "2026-06-07T20:40:59.033Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "20260607174540_InitialMigration.cs",
-              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Data\\Migrations\\20260607174540_InitialMigration.cs",
-              "RelativeDocumentMoniker": "Data\\Migrations\\20260607174540_InitialMigration.cs",
-              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Data\\Migrations\\20260607174540_InitialMigration.cs",
-              "RelativeToolTip": "Data\\Migrations\\20260607174540_InitialMigration.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Title": "20260607203427_AmbosModulos.cs",
+              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Data\\Migrations\\20260607203427_AmbosModulos.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20260607203427_AmbosModulos.cs",
+              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Data\\Migrations\\20260607203427_AmbosModulos.cs",
+              "RelativeToolTip": "Data\\Migrations\\20260607203427_AmbosModulos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T17:45:40.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T17:27:46.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MedicoEspecialidad.cs",
-              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\MedicoEspecialidad.cs",
-              "RelativeDocumentMoniker": "Models\\MedicoEspecialidad.cs",
-              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\MedicoEspecialidad.cs",
-              "RelativeToolTip": "Models\\MedicoEspecialidad.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T17:16:50.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Medico.cs",
-              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Medico.cs",
-              "RelativeDocumentMoniker": "Models\\Medico.cs",
-              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Medico.cs",
-              "RelativeToolTip": "Models\\Medico.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T16:37:58.033Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Especialidad.cs",
-              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Especialidad.cs",
-              "RelativeDocumentMoniker": "Models\\Especialidad.cs",
-              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Especialidad.cs",
-              "RelativeToolTip": "Models\\Especialidad.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T16:34:13.604Z",
+              "WhenOpened": "2026-06-07T20:34:27.248Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Usuario.cs",
-              "RelativeToolTip": "Models\\Usuario.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T16:31:22.797Z",
+              "WhenOpened": "2026-06-07T20:23:27.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ResultadoExamenMedico.cs",
+              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\ResultadoExamenMedico.cs",
+              "RelativeDocumentMoniker": "Models\\ResultadoExamenMedico.cs",
+              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\ResultadoExamenMedico.cs",
+              "RelativeToolTip": "Models\\ResultadoExamenMedico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T20:17:30.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Padecimiento.cs",
+              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Padecimiento.cs",
+              "RelativeDocumentMoniker": "Models\\Padecimiento.cs",
+              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Padecimiento.cs",
+              "RelativeToolTip": "Models\\Padecimiento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T20:17:05.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NotaClinica.cs",
+              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\NotaClinica.cs",
+              "RelativeDocumentMoniker": "Models\\NotaClinica.cs",
+              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\NotaClinica.cs",
+              "RelativeToolTip": "Models\\NotaClinica.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T20:16:41.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MedicamentoPaciente.cs",
+              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\MedicamentoPaciente.cs",
+              "RelativeDocumentMoniker": "Models\\MedicamentoPaciente.cs",
+              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\MedicamentoPaciente.cs",
+              "RelativeToolTip": "Models\\MedicamentoPaciente.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T19:53:01.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PadecimientoPaciente.cs",
+              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\PadecimientoPaciente.cs",
+              "RelativeDocumentMoniker": "Models\\PadecimientoPaciente.cs",
+              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\PadecimientoPaciente.cs",
+              "RelativeToolTip": "Models\\PadecimientoPaciente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T19:40:32.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Medicamento.cs",
+              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Medicamento.cs",
+              "RelativeDocumentMoniker": "Models\\Medicamento.cs",
+              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Medicamento.cs",
+              "RelativeToolTip": "Models\\Medicamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T19:06:26.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Tratamiento.cs",
+              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Tratamiento.cs",
+              "RelativeDocumentMoniker": "Models\\Tratamiento.cs",
+              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Tratamiento.cs",
+              "RelativeToolTip": "Models\\Tratamiento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T19:06:04.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TratamientoPaciente.cs",
+              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\TratamientoPaciente.cs",
+              "RelativeDocumentMoniker": "Models\\TratamientoPaciente.cs",
+              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\TratamientoPaciente.cs",
+              "RelativeToolTip": "Models\\TratamientoPaciente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T19:50:54.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Especialidad.cs",
+              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Especialidad.cs",
+              "RelativeDocumentMoniker": "Models\\Especialidad.cs",
+              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Especialidad.cs",
+              "RelativeToolTip": "Models\\Especialidad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T20:16:10.118Z",
               "EditorCaption": ""
             }
           ]

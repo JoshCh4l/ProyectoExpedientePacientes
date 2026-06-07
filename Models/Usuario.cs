@@ -23,13 +23,17 @@
         public string Contrasenia { get; set; } = string.Empty;
 
         [Required]
-        [RegularExpression("^(Administrador|Medico|Paciente)$", ErrorMessage = "El rol debe ser Administrador, Medico o Paciente")]
-        public string Rol { get; set; } = string.Empty;
+        public Roles Rol { get; set; } 
 
         public bool Bloqueado { get; set; }
 
         public int? MedicoId { get; set; }
         public Medico? Medico { get; set; }
+
+        public int? PacienteId { get; set; }
+        public Paciente? Paciente { get; set; }
+
+
     }
 
 

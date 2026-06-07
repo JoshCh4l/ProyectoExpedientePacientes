@@ -1,0 +1,27 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ProyectoExpedientePacientes.Models
+{
+    public class ResultadoExamenMedico
+    {
+        [Key]
+        public int Id { get; set; }
+
+        public int PacienteId { get; set; }
+        public Paciente Paciente { get; set; } = null!;
+
+        public int MedicoId { get; set; }
+        public Medico Medico { get; set; } = null!;
+
+        [Required]
+        [MaxLength(500)]
+        public string Descripcion { get; set; } = string.Empty;
+
+        public byte[] Archivo { get; set; } = null!;
+
+        [Required]
+        public string TipoArchivo { get; set; } = string.Empty;
+
+        public DateTime FechaRegistro { get; set; }
+    }
+}
