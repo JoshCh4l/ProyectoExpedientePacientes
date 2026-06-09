@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\tratamientopaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\tratamientopaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\medicamentopaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\medicamentopaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,16 +35,8 @@
       "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\tratamiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\tratamientopaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\tratamientopaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\medicamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\medicamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,24 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ResultadoExamenMedico.cs",
-              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\ResultadoExamenMedico.cs",
-              "RelativeDocumentMoniker": "Models\\ResultadoExamenMedico.cs",
-              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\ResultadoExamenMedico.cs",
-              "RelativeToolTip": "Models\\ResultadoExamenMedico.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T20:17:30.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Padecimiento.cs",
               "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Padecimiento.cs",
               "RelativeDocumentMoniker": "Models\\Padecimiento.cs",
@@ -71,12 +58,11 @@
               "RelativeToolTip": "Models\\Padecimiento.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T20:17:05.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-07T20:17:05.495Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "NotaClinica.cs",
               "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\NotaClinica.cs",
               "RelativeDocumentMoniker": "Models\\NotaClinica.cs",
@@ -84,25 +70,24 @@
               "RelativeToolTip": "Models\\NotaClinica.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T20:16:41.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-07T20:16:41.718Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MedicamentoPaciente.cs",
               "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\MedicamentoPaciente.cs",
               "RelativeDocumentMoniker": "Models\\MedicamentoPaciente.cs",
               "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\MedicamentoPaciente.cs",
               "RelativeToolTip": "Models\\MedicamentoPaciente.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-07T19:53:01.828Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "PadecimientoPaciente.cs",
               "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\PadecimientoPaciente.cs",
               "RelativeDocumentMoniker": "Models\\PadecimientoPaciente.cs",
@@ -110,12 +95,11 @@
               "RelativeToolTip": "Models\\PadecimientoPaciente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T19:40:32.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-07T19:40:32.334Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Medicamento.cs",
               "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Medicamento.cs",
               "RelativeDocumentMoniker": "Models\\Medicamento.cs",
@@ -123,12 +107,11 @@
               "RelativeToolTip": "Models\\Medicamento.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T19:06:26.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-07T19:06:26.801Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Tratamiento.cs",
               "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Tratamiento.cs",
               "RelativeDocumentMoniker": "Models\\Tratamiento.cs",
@@ -136,12 +119,11 @@
               "RelativeToolTip": "Models\\Tratamiento.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T19:06:04.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-07T19:06:04.231Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "TratamientoPaciente.cs",
               "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\TratamientoPaciente.cs",
               "RelativeDocumentMoniker": "Models\\TratamientoPaciente.cs",
@@ -154,16 +136,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "Especialidad.cs",
               "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Especialidad.cs",
               "RelativeDocumentMoniker": "Models\\Especialidad.cs",
               "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Especialidad.cs",
               "RelativeToolTip": "Models\\Especialidad.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-07T20:16:10.118Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ResultadoExamenMedico.cs",
+              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\ResultadoExamenMedico.cs",
+              "RelativeDocumentMoniker": "Models\\ResultadoExamenMedico.cs",
+              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\ResultadoExamenMedico.cs",
+              "RelativeToolTip": "Models\\ResultadoExamenMedico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T20:17:30.061Z"
             }
           ]
         }
