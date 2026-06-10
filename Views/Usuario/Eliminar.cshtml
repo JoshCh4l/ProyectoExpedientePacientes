@@ -1,0 +1,13 @@
+﻿@model ProyectoExpedientePacientes.Models.Usuario
+
+<h2>Estas seguro de eliminar a este usuario?</h2><br />
+
+<h4><strong>Cedula:</strong> @Model.Cedula</h4><br />
+
+<h4><strong>Nombre:</strong> @Model.Nombre</h4><br />
+
+<form asp-action="Eliminar" method="post">
+    <button type="submit" class="btn btn-danger">Confirmar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+
+</form>

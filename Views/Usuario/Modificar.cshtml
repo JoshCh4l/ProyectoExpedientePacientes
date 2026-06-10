@@ -1,0 +1,59 @@
+﻿@model ProyectoExpedientePacientes.Models.Usuario
+
+
+<h2>Crear Usuario</h2>
+
+<form asp-action="Modificar" method="post">
+
+    <div class="mb-3">
+        <label asp-for="Cedula" class="form-label"></label>
+        <input asp-for="Cedula" class="form-control" autocomplete="off" />
+        <span asp-validation-for="Cedula" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Nombre" class="form-label"></label>
+        <input asp-for="Nombre" class="form-control" autocomplete="off" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Correo" class="form-label"></label>
+        <input asp-for="Correo" class="form-control" autocomplete="off" />
+        <span asp-validation-for="Correo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Contrasenia" class="form-label">Contraseña</label>
+        <input asp-for="Contrasenia" class="form-control" />
+        <span asp-validation-for="Contrasenia" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Rol" class="form-label"></label>
+
+        <select asp-for="Rol"
+                asp-items="Html.GetEnumSelectList<Roles>()"
+                class="form-select">
+            <option value="">-- Seleccione un rol --</option>
+        </select>
+
+        <span asp-validation-for="Rol" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Guardar
+    </button>
+
+    <a asp-action="Index" class="btn btn-secondary">
+        Cancelar
+    </a>
+
+</form>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
