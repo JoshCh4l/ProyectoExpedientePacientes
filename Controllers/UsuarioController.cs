@@ -15,18 +15,11 @@ namespace ProyectoExpedientePacientes.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index(String buscar)
+        public async Task<IActionResult> Index()
         {
-            var usuarios = from usuario in _context.Usuario select usuario;
+            var usuarios = await _context.Usuario.Include(u => u.Medico).Include(u => u.Paciente).ToListAsync();
 
-            if (!string.IsNullOrWhiteSpace(buscar))
-            {
-                usuarios = usuarios.Where(u => u.Cedula.Contains(buscar));
-            }
-
-            ViewBag.Buscar = buscar;
-
-            return View(await usuarios.Include(u => u.Medico).Include(u => u.Paciente).ToListAsync());
+            return View(usuarios);
         }
 
         [HttpGet]

@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\views\\usuario\\agregar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:views\\usuario\\agregar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|c:\\users\\crazyracoon\\source\\repos\\proyectoexpedientepacientes\\views\\usuario\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7FC34BB5-9CF4-1F8A-D21A-F8907A26690D}|ProyectoExpedientePacientes.csproj|solutionrelative:views\\usuario\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Eliminar.cshtml",
-              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Views\\Usuario\\Eliminar.cshtml",
-              "RelativeDocumentMoniker": "Views\\Usuario\\Eliminar.cshtml",
-              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Views\\Usuario\\Eliminar.cshtml",
-              "RelativeToolTip": "Views\\Usuario\\Eliminar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-10T18:40:10.825Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Agregar.cshtml",
-              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Views\\Usuario\\Agregar.cshtml",
-              "RelativeDocumentMoniker": "Views\\Usuario\\Agregar.cshtml",
-              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Views\\Usuario\\Agregar.cshtml",
-              "RelativeToolTip": "Views\\Usuario\\Agregar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-10T17:16:06.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Views\\Usuario\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Usuario\\Index.cshtml",
               "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Views\\Usuario\\Index.cshtml",
               "RelativeToolTip": "Views\\Usuario\\Index.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAADIAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-10T16:09:28.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Models\\Usuario.cs",
-              "RelativeToolTip": "Models\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T15:58:12.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\CrazyRacoon\\source\\repos\\ProyectoExpedientePacientes\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBwAAABmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T15:45:10.392Z",
+              "WhenOpened": "2026-06-10T21:34:38.99Z",
               "EditorCaption": ""
             }
           ]
