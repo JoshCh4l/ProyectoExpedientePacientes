@@ -8,6 +8,8 @@ namespace ProyectoExpedientePacientes.Models
         public int Id { get; set; }
 
         [Required]
+        //Min?
+        //Max?
         public string Nombre { get; set; } = string.Empty;
 
         public ICollection<MedicoEspecialidad> MedicoEspecialidades { get; set; }
