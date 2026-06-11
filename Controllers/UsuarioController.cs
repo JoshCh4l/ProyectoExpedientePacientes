@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ProyectoExpedientePacientes.Models;
 using ProyectoExpedientePacientes.Data;
+using ProyectoExpedientePacientes.Models;
 
 namespace ProyectoExpedientePacientes.Controllers
 {
+    [Authorize(Roles = "Administrador")]
     public class UsuarioController : Controller
     {
 
