@@ -34,7 +34,7 @@ namespace ProyectoExpedientePacientes.Controllers
 
             if (usuario == null)
             {
-                ViewBag.Error = "Credenciales inválidas";
+                ViewBag.Error = "Usuario o Contrasenia Incorrectos ";
                 return View();
 
             }
