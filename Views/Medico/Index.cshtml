@@ -1,0 +1,57 @@
+﻿@model IEnumerable<ProyectoExpedientePacientes.Models.Medico>
+
+@{
+    ViewData["Title"] = "Médicos";
+}
+
+<h2>Médicos</h2>
+
+<form asp-action="Index" method="get">
+    <input type="text" name="buscar" placeholder="Buscar médico..." />
+    <button type="submit">Buscar</button>
+</form>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">
+        Nuevo Médico
+    </a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Colegiado</th>
+            <th>Especialidades</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var medico in Model)
+        {
+            <tr>
+                <td>@medico.NombreCompleto</td>
+                <td>@medico.NumeroColegiado</td>
+
+                <td>
+                    @string.Join(", ",
+                        medico.MedicoEspecialidades
+                        .Select(me => me.Especialidad.Nombre))
+                </td>
+
+                <td>
+                    <a asp-action="Edit" asp-route-id="@medico.Id">
+                        Editar
+                    </a>
+
+                    |
+
+                    <a asp-action="Delete" asp-route-id="@medico.Id">
+                        Eliminar
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

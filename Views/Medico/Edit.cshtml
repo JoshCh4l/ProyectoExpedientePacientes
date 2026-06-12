@@ -1,0 +1,71 @@
+﻿@model ProyectoExpedientePacientes.Models.Medico
+
+@{
+    ViewData["Title"] = "Editar Médico";
+
+    var especialidades =
+        ViewBag.Especialidades as List<ProyectoExpedientePacientes.Models.Especialidad>;
+
+    var seleccionadas =
+        Model.MedicoEspecialidades
+        .Select(me => me.EspecialidadId)
+        .ToList();
+}
+
+<h2>Editar Médico</h2>
+
+<form asp-action="Edit"
+      method="post"
+      enctype="multipart/form-data">
+
+    <input type="hidden"
+           asp-for="Id" />
+
+    <div class="mb-3">
+        <label>Nombre Completo</label>
+
+        <input asp-for="NombreCompleto"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Número Colegiado</label>
+
+        <input asp-for="NumeroColegiado"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Nueva Fotografía</label>
+
+        <input type="file"
+               name="foto"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+
+        <label>Especialidades</label>
+
+        @foreach (var esp in especialidades)
+        {
+            <div>
+
+                <input type="checkbox"
+                       name="especialidadesSeleccionadas"
+                       value="@esp.Id"
+                       checked="@seleccionadas.Contains(esp.Id)" />
+
+                @esp.Nombre
+
+            </div>
+        }
+
+    </div>
+
+    <button type="submit"
+            class="btn btn-primary">
+        Guardar Cambios
+    </button>
+
+</form>
