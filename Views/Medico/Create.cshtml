@@ -1,0 +1,63 @@
+﻿@model ProyectoExpedientePacientes.Models.Medico
+
+@{
+    ViewData["Title"] = "Crear Médico";
+
+    var especialidades =
+        ViewBag.Especialidades as List<ProyectoExpedientePacientes.Models.Especialidad>;
+}
+
+<h2>Crear Médico</h2>
+
+<form asp-action="Create"
+      method="post"
+      enctype="multipart/form-data">
+
+    <div class="mb-3">
+        <label>Nombre Completo</label>
+
+        <input asp-for="NombreCompleto"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Número Colegiado</label>
+
+        <input asp-for="NumeroColegiado"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Fotografía</label>
+
+        <input type="file"
+               name="foto"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Especialidades</label>
+
+        @foreach (var esp in especialidades)
+        {
+            <div>
+                <input type="checkbox"
+                       name="especialidadesSeleccionadas"
+                       value="@esp.Id" />
+
+                @esp.Nombre
+            </div>
+        }
+    </div>
+
+    <button type="submit"
+            class="btn btn-success">
+        Guardar
+    </button>
+
+    <a asp-action="Index"
+       class="btn btn-secondary">
+        Cancelar
+    </a>
+
+</form>

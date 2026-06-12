@@ -14,7 +14,7 @@ namespace ProyectoExpedientePacientes.Models
         [MaxLength(9)]
         public string NumeroColegiado { get; set; } = string.Empty;
 
-        [Required]
+        //[Required]
         public byte[]? Fotografia { get; set; }
 
         public ICollection<MedicoEspecialidad> MedicoEspecialidades { get; set; }
