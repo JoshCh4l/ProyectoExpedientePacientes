@@ -48,10 +48,16 @@ namespace ProyectoExpedientePacientes.Controllers
 
             var claims = new List<Claim>
         {
-            new Claim(ClaimTypes.Email, usuario.Correo),
+            new Claim("", usuario.Correo),
             new Claim(ClaimTypes.Name, usuario.Nombre),
             new Claim(ClaimTypes.Role, usuario.Rol.ToString()),
+
         };
+
+            if (usuario.MedicoId.HasValue)
+            {
+                claims.Add(new Claim("MedicoId", usuario.MedicoId.Value.ToString()));
+            }
 
             var claimsIdentity = new ClaimsIdentity(
                 claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -60,6 +66,11 @@ namespace ProyectoExpedientePacientes.Controllers
             await HttpContext.SignInAsync(
                 CookieAuthenticationDefaults.AuthenticationScheme,
                 new ClaimsPrincipal(claimsIdentity));
+
+            if (usuario.Rol == Roles.Medico)
+            {
+                return RedirectToAction("Index", "Paciente");
+            }
 
             return RedirectToAction("Index", "Home");
         }

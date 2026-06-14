@@ -44,9 +44,9 @@ namespace ProyectoExpedientePacientes.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(
-    Medico medico,
-    IFormFile foto,
-    List<int> especialidadesSeleccionadas)
+            Medico medico,
+            IFormFile foto,
+            List<int> especialidadesSeleccionadas)
         {
 
             if (foto == null)
@@ -105,10 +105,10 @@ namespace ProyectoExpedientePacientes.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(
-    int id,
-    Medico medico,
-    IFormFile foto,
-    List<int> especialidadesSeleccionadas)
+            int id,
+            Medico medico,
+            IFormFile foto,
+            List<int> especialidadesSeleccionadas)
         {
             var medicoDb = await _context.Medico
                 .Include(m => m.MedicoEspecialidades)

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ProyectoExpedientePacientes.Data;
 using ProyectoExpedientePacientes.Models;
@@ -27,11 +28,20 @@ namespace ProyectoExpedientePacientes.Controllers
         [HttpGet]
         public async Task<IActionResult> Agregar()
         {
+            ViewBag.Medicos = _context.Medico
+                .Where(m => !_context.Usuario.Any(u => u.MedicoId == m.Id))
+                .Select(m => new SelectListItem
+                {
+                    Value = m.Id.ToString(),
+                    Text = m.Id.ToString()
+                })
+                .ToList();
+
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Agregar(Usuario usuario)
+        public async Task<IActionResult> Agregar(Usuario usuario, int? MedicoId)
         {
             if (ModelState.IsValid)
             {
@@ -45,6 +55,11 @@ namespace ProyectoExpedientePacientes.Controllers
 
                     usuario.PacienteId = paciente.Id;
                 }
+                if (usuario.Rol == Roles.Medico)
+                {
+                    usuario.MedicoId = MedicoId;
+                }
+                    
 
                 _context.Usuario.Add(usuario);
                 await _context.SaveChangesAsync();

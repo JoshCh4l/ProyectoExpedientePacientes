@@ -3,7 +3,7 @@
 
 <h2>Crear Usuario</h2>
 
-<form asp-action="Agregar" method="post">
+<form id="formUsuario" asp-action="Agregar" method="post">
 
     <div class="mb-3">
         <label asp-for="Cedula" class="form-label"></label>
@@ -41,6 +41,17 @@
         <span asp-validation-for="Rol" class="text-danger"></span>
     </div>
 
+    <div class="mb-3" id="listaMedicos" style="display:none;">
+        <label asp-for="Rol" class="form-label"></label>
+
+        <select name="MedicoId"
+                id="MedicoId"
+                class="form-select"
+                asp-items="ViewBag.Medicos">
+            <option value="">-- Seleccione un médico --</option>
+        </select>
+    </div>
+
     <button type="submit" class="btn btn-primary">
         Guardar
     </button>
@@ -56,4 +67,39 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+
+    <script>
+        function mostrarMedicos() {
+            var textoRol = $("#Rol option:selected").text();
+
+            if (textoRol === "Medico") {
+                $("#listaMedicos").show();
+            }
+            else {
+                $("#listaMedicos").hide();
+                $("#MedicoId").val("");
+            }
+        }
+
+        $(document).ready(function () {
+            mostrarMedicos();
+
+            $("#Rol").change(function () {
+                mostrarMedicos();
+            });
+        });
+
+        $("#formUsuario").submit(function (e) {
+
+            var rol = $("#Rol option:selected").text();
+            var medicoId = $("#MedicoId").val();
+
+            if (rol === "Medico" && !medicoId) {
+                alert("Debe seleccionar un médico.");
+                e.preventDefault();
+            }
+
+        });
+    </script>
+
 }
