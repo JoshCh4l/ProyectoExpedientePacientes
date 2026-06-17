@@ -68,6 +68,39 @@
                             </li>
                         }
 
+                        @if (User.IsInRole("Administrador") || User.IsInRole("Medico"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   asp-controller="Padecimiento"
+                                   asp-action="Index">
+                                    Padecimientos
+                                </a>
+                            </li>
+                        }
+
+                        @if (User.IsInRole("Administrador") || User.IsInRole("Medico"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   asp-controller="Tratamiento"
+                                   asp-action="Index">
+                                    Tratamientos
+                                </a>
+                            </li>
+                        }
+
+                        @if (User.IsInRole("Administrador") || User.IsInRole("Medico"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   asp-controller="Medicamento"
+                                   asp-action="Index">
+                                    Medicamentos
+                                </a>
+                            </li>
+                        }
+
                     </ul>
 
                     <ul class="navbar-nav ms-auto">
