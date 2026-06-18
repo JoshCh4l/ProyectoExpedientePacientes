@@ -48,7 +48,7 @@ namespace ProyectoExpedientePacientes.Controllers
 
             var claims = new List<Claim>
         {
-            new Claim("", usuario.Correo),
+            new Claim(ClaimTypes.Email, usuario.Correo),
             new Claim(ClaimTypes.Name, usuario.Nombre),
             new Claim(ClaimTypes.Role, usuario.Rol.ToString()),
 
