@@ -1,0 +1,49 @@
+﻿@model IEnumerable<ProyectoExpedientePacientes.Models.ModeloVistaPaciente>
+
+<h1>Listado de Pacientes</h1>
+
+
+<table id="tablaPacientes" class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>PacienteId</th>
+            <th>Cédula</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>UltimaAtencion</th>
+            <th>Acciones</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var paciente in Model)
+        {
+            <tr>
+                <td>@paciente.PacienteId</td>
+                <td>@paciente.Cedula</td>
+                <td>@paciente.Nombre</td>
+                <td>@paciente.Correo</td>
+                <td>@paciente.UltimaAtencion</td>
+                <td>
+                    <a asp-action="Historial"
+                       asp-route-id="@paciente.PacienteId"
+                       class="btn btn-danger btn-sm">
+                        Historial Clinico
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        $(document).ready(function(){
+            $('#tablaPacientes').DataTable({
+                lenguage: {
+                    url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/es-ES.json'
+                }
+            });
+        });
+    </script>
+}

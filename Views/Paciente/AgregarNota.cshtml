@@ -1,0 +1,31 @@
+﻿@model ProyectoExpedientePacientes.Models.NotaClinica
+
+<h2>Agregar Nota Clinica</h2>
+
+<form asp-action="AgregarNota" method="post">
+
+    <input type="hidden" name="id" value="@ViewBag.PacienteId" />   
+
+    <div class="mb-3">
+        <label asp-for="Contenido" class="form-label"></label>
+        <textarea asp-for="Contenido" class="form-control" rows="8"></textarea>
+        <span asp-validation-for="Contenido" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Guardar
+    </button>
+
+    <a asp-action="Historial" asp-route-id="@ViewBag.PacienteId" class="btn btn-secondary">
+        Cancelar
+    </a>
+</form>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    
+}
