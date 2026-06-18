@@ -57,13 +57,9 @@ namespace ProyectoExpedientePacientes.Controllers
             new Claim(ClaimTypes.Email, usuario.Correo),
             new Claim(ClaimTypes.Name, usuario.Nombre),
             new Claim(ClaimTypes.Role, usuario.Rol.ToString()),
+            new Claim("UsuarioId", usuario.Id.ToString())
 
         };
-
-            if (usuario.MedicoId.HasValue)
-            {
-                claims.Add(new Claim("MedicoId", usuario.MedicoId.Value.ToString()));
-            }
 
             var claimsIdentity = new ClaimsIdentity(
                 claims, CookieAuthenticationDefaults.AuthenticationScheme);

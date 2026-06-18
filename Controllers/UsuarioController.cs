@@ -33,7 +33,7 @@ namespace ProyectoExpedientePacientes.Controllers
                 .Select(m => new SelectListItem
                 {
                     Value = m.Id.ToString(),
-                    Text = m.Id.ToString()
+                    Text = $"{m.Id} - {m.NombreCompleto}"
                 })
                 .ToList();
 
