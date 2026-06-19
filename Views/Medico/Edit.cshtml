@@ -1,7 +1,7 @@
 ﻿@model ProyectoExpedientePacientes.Models.Medico
 
 @{
-    ViewData["Title"] = "Editar Médico";
+    ViewData["Title"] = "Modificar Médico";
 
     var especialidades =
         ViewBag.Especialidades as List<ProyectoExpedientePacientes.Models.Especialidad>;
@@ -12,7 +12,7 @@
         .ToList();
 }
 
-<h2>Editar Médico</h2>
+<h2>Modificar Médico</h2>
 
 <form asp-action="Edit"
       method="post"
@@ -22,21 +22,33 @@
            asp-for="Id" />
 
     <div class="mb-3">
-        <label>Nombre Completo</label>
+        <label asp-for="NombreCompleto"
+               class="form-label"></label>
 
         <input asp-for="NombreCompleto"
-               class="form-control" />
+               class="form-control"
+               autocomplete="off" />
+
+        <span asp-validation-for="NombreCompleto"
+              class="text-danger"></span>
     </div>
 
     <div class="mb-3">
-        <label>Número Colegiado</label>
+        <label asp-for="NumeroColegiado"
+               class="form-label"></label>
 
         <input asp-for="NumeroColegiado"
-               class="form-control" />
+               class="form-control"
+               autocomplete="off" />
+
+        <span asp-validation-for="NumeroColegiado"
+              class="text-danger"></span>
     </div>
 
     <div class="mb-3">
-        <label>Nueva Fotografía</label>
+        <label class="form-label">
+            Nueva Fotografía
+        </label>
 
         <input type="file"
                name="foto"
@@ -45,18 +57,23 @@
 
     <div class="mb-3">
 
-        <label>Especialidades</label>
+        <label class="form-label">
+            Especialidades
+        </label>
 
         @foreach (var esp in especialidades)
         {
-            <div>
+            <div class="form-check">
 
-                <input type="checkbox"
+                <input class="form-check-input"
+                       type="checkbox"
                        name="especialidadesSeleccionadas"
                        value="@esp.Id"
                        checked="@seleccionadas.Contains(esp.Id)" />
 
-                @esp.Nombre
+                <label class="form-check-label">
+                    @esp.Nombre
+                </label>
 
             </div>
         }
@@ -65,7 +82,18 @@
 
     <button type="submit"
             class="btn btn-primary">
-        Guardar Cambios
+        Guardar
     </button>
 
+    <a asp-action="Index"
+       class="btn btn-secondary">
+        Cancelar
+    </a>
+
 </form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
