@@ -88,10 +88,10 @@ namespace ProyectoExpedientePacientes.Controllers.Api
 
             var examenes = _context.ResultadoExamenMedico
                 .Where(e => e.PacienteId == pacienteId)
-                .Include(e => e.Medico)
+                .Include(e => e.Usuario)
                 .Select(e => new
                 {
-                    e.Medico.NombreCompleto,
+                    e.Usuario.Nombre,
                     e.Descripcion,
                     e.Archivo,
                     e.TipoArchivo,

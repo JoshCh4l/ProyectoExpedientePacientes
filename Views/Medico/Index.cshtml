@@ -1,27 +1,19 @@
 ﻿@model IEnumerable<ProyectoExpedientePacientes.Models.Medico>
 
-@{
-    ViewData["Title"] = "Médicos";
-}
+<h1>Listado de Médicos</h1>
 
-<h2>Médicos</h2>
+<a class="btn btn-primary mb-3"
+   href="@Url.Action("Create", "Medico")">
+    Agregar Médico
+</a>
 
-<form asp-action="Index" method="get">
-    <input type="text" name="buscar" placeholder="Buscar médico..." />
-    <button type="submit">Buscar</button>
-</form>
+<table id="tablaMedicos"
+       class="table table-striped table-bordered">
 
-<p>
-    <a asp-action="Create" class="btn btn-primary">
-        Nuevo Médico
-    </a>
-</p>
-
-<table class="table">
     <thead>
         <tr>
             <th>Nombre</th>
-            <th>Colegiado</th>
+            <th>Número Colegiado</th>
             <th>Especialidades</th>
             <th>Acciones</th>
         </tr>
@@ -32,26 +24,48 @@
         {
             <tr>
                 <td>@medico.NombreCompleto</td>
+
                 <td>@medico.NumeroColegiado</td>
 
                 <td>
                     @string.Join(", ",
-                        medico.MedicoEspecialidades
-                        .Select(me => me.Especialidad.Nombre))
+                    medico.MedicoEspecialidades
+                    .Select(me => me.Especialidad.Nombre))
                 </td>
 
                 <td>
-                    <a asp-action="Edit" asp-route-id="@medico.Id">
-                        Editar
+
+                    <a asp-action="Edit"
+                       asp-route-id="@medico.Id"
+                       class="btn btn-warning btn-sm">
+                        Modificar
                     </a>
 
-                    |
-
-                    <a asp-action="Delete" asp-route-id="@medico.Id">
+                    <a asp-action="Delete"
+                       asp-route-id="@medico.Id"
+                       class="btn btn-danger btn-sm">
                         Eliminar
                     </a>
+
                 </td>
+
             </tr>
         }
     </tbody>
+
 </table>
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+
+            $('#tablaMedicos').DataTable({
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/es-ES.json'
+                }
+            });
+
+        });
+    </script>
+}

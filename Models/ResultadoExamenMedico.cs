@@ -10,8 +10,8 @@ namespace ProyectoExpedientePacientes.Models
         public int PacienteId { get; set; }
         public Paciente Paciente { get; set; } = null!;
 
-        public int MedicoId { get; set; }
-        public Medico Medico { get; set; } = null!;
+        public int UsuarioId { get; set; }
+        public Usuario Usuario { get; set; } = null!;
 
         [Required]
         [MaxLength(500)]

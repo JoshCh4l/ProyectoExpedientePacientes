@@ -1,29 +1,36 @@
 ﻿@model ProyectoExpedientePacientes.Models.Medico
 
-<h2>Eliminar Médico</h2>
+<h2>¿Está seguro de eliminar este médico?</h2>
+
+<br />
 
 <h4>
-    ¿Desea eliminar al médico
-    @Model.NombreCompleto?
+    <strong>Nombre:</strong>
+    @Model.NombreCompleto
 </h4>
 
-<form asp-action="Delete">
+<br />
+
+<h4>
+    <strong>Número Colegiado:</strong>
+    @Model.NumeroColegiado
+</h4>
+
+<br />
+
+<form asp-action="Delete" method="post">
 
     <input type="hidden"
            asp-for="Id" />
 
     <button type="submit"
             class="btn btn-danger">
-
-        Eliminar
-
+        Confirmar
     </button>
 
     <a asp-action="Index"
        class="btn btn-secondary">
-
         Cancelar
-
     </a>
 
 </form>

@@ -14,21 +14,32 @@
       enctype="multipart/form-data">
 
     <div class="mb-3">
-        <label>Nombre Completo</label>
+        <label asp-for="NombreCompleto" class="form-label"></label>
 
         <input asp-for="NombreCompleto"
-               class="form-control" />
+               class="form-control"
+               autocomplete="off" />
+
+        <span asp-validation-for="NombreCompleto"
+              class="text-danger"></span>
     </div>
 
     <div class="mb-3">
-        <label>Número Colegiado</label>
+        <label asp-for="NumeroColegiado"
+               class="form-label"></label>
 
         <input asp-for="NumeroColegiado"
-               class="form-control" />
+               class="form-control"
+               autocomplete="off" />
+
+        <span asp-validation-for="NumeroColegiado"
+              class="text-danger"></span>
     </div>
 
     <div class="mb-3">
-        <label>Fotografía</label>
+        <label class="form-label">
+            Fotografía
+        </label>
 
         <input type="file"
                name="foto"
@@ -36,22 +47,31 @@
     </div>
 
     <div class="mb-3">
-        <label>Especialidades</label>
+
+        <label class="form-label">
+            Especialidades
+        </label>
 
         @foreach (var esp in especialidades)
         {
-            <div>
-                <input type="checkbox"
+            <div class="form-check">
+
+                <input class="form-check-input"
+                       type="checkbox"
                        name="especialidadesSeleccionadas"
                        value="@esp.Id" />
 
-                @esp.Nombre
+                <label class="form-check-label">
+                    @esp.Nombre
+                </label>
+
             </div>
         }
+
     </div>
 
     <button type="submit"
-            class="btn btn-success">
+            class="btn btn-primary">
         Guardar
     </button>
 
@@ -61,3 +81,9 @@
     </a>
 
 </form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

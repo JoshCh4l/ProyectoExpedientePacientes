@@ -1,0 +1,312 @@
+﻿@using ProyectoExpedientePacientes.Models
+
+<h2>Expediente del Paciente</h2>
+
+<hr />
+
+<!-- ================= Padecimientos ================= -->
+
+<h3>Padecimientos</h3>
+
+<form asp-action="AgregarPadecimiento" method="post" class="mb-3">
+
+    <input type="hidden"
+           name="pacienteId"
+           value="@ViewBag.PacienteId" />
+
+    <div class="row">
+
+        <div class="col-md-10">
+            <select name="padecimientoId" class="form-select">
+                @foreach (var p in (List<Padecimiento>)ViewBag.Padecimientos)
+                {
+                    <option value="@p.Id">@p.Nombre</option>
+                }
+            </select>
+        </div>
+
+        <div class="col-md-2">
+            <button type="submit"
+                    class="btn btn-primary w-100">
+                Agregar
+            </button>
+        </div>
+
+    </div>
+
+</form>
+
+<table class="table table-striped table-bordered">
+
+    <thead>
+        <tr>
+            <th>Padecimiento</th>
+            <th>Médico</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var p in (List<PadecimientoPaciente>)ViewBag.PadecimientosPaciente)
+        {
+            <tr>
+
+                <td>@p.Padecimiento.Nombre</td>
+
+                <td>@p.Usuario.Nombre</td>
+
+                <td>@p.FechaRegistro</td>
+
+                <td>
+                    @(p.Suspendido ? "Suspendido" : "Activo")
+                </td>
+
+                <td>
+
+                    @if (!p.Suspendido)
+                    {
+                        <a asp-action="SuspenderPadecimiento"
+                           asp-route-id="@p.Id"
+                           class="btn btn-danger btn-sm">
+                            Suspender
+                        </a>
+                    }
+
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+
+<hr />
+
+<!-- ================= Medicamentos ================= -->
+
+<h3>Medicamentos</h3>
+
+<form asp-action="AgregarMedicamento" method="post" class="mb-3">
+
+    <input type="hidden"
+           name="pacienteId"
+           value="@ViewBag.PacienteId" />
+
+    <div class="row">
+
+        <div class="col-md-10">
+            <select name="medicamentoId" class="form-select">
+
+                @foreach (var m in (List<Medicamento>)ViewBag.Medicamentos)
+                {
+                    <option value="@m.Id">@m.Nombre</option>
+                }
+
+            </select>
+        </div>
+
+        <div class="col-md-2">
+
+            <button type="submit"
+                    class="btn btn-primary w-100">
+                Agregar
+            </button>
+
+        </div>
+
+    </div>
+
+</form>
+
+<table class="table table-striped table-bordered">
+
+    <thead>
+        <tr>
+            <th>Medicamento</th>
+            <th>Médico</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var m in (List<MedicamentoPaciente>)ViewBag.MedicamentosPaciente)
+        {
+            <tr>
+
+                <td>@m.Medicamento.Nombre</td>
+
+                <td>@m.Usuario.Nombre</td>
+
+                <td>@m.FechaRegistro</td>
+
+                <td>
+                    @(m.Suspendido ? "Suspendido" : "Activo")
+                </td>
+
+                <td>
+
+                    @if (!m.Suspendido)
+                    {
+                        <a asp-action="SuspenderMedicamento"
+                           asp-route-id="@m.Id"
+                           class="btn btn-danger btn-sm">
+                            Suspender
+                        </a>
+                    }
+
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+
+<hr />
+
+<!-- ================= Tratamientos ================= -->
+
+<h3>Tratamientos</h3>
+
+<form asp-action="AgregarTratamiento" method="post" class="mb-3">
+
+    <input type="hidden"
+           name="pacienteId"
+           value="@ViewBag.PacienteId" />
+
+    <div class="row">
+
+        <div class="col-md-10">
+
+            <select name="tratamientoId"
+                    class="form-select">
+
+                @foreach (var t in (List<Tratamiento>)ViewBag.Tratamientos)
+                {
+                    <option value="@t.Id">@t.Nombre</option>
+                }
+
+            </select>
+
+        </div>
+
+        <div class="col-md-2">
+
+            <button type="submit"
+                    class="btn btn-primary w-100">
+                Agregar
+            </button>
+
+        </div>
+
+    </div>
+
+</form>
+
+<table class="table table-striped table-bordered">
+
+    <thead>
+        <tr>
+            <th>Tratamiento</th>
+            <th>Médico</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var t in (List<TratamientoPaciente>)ViewBag.TratamientosPaciente)
+        {
+            <tr>
+
+                <td>@t.Tratamiento.Nombre</td>
+
+                <td>@t.Usuario.Nombre</td>
+
+                <td>@t.FechaRegistro</td>
+
+                <td>
+                    @(t.Suspendido ? "Suspendido" : "Activo")
+                </td>
+
+                <td>
+
+                    @if (!t.Suspendido)
+                    {
+                        <a asp-action="SuspenderTratamiento"
+                           asp-route-id="@t.Id"
+                           class="btn btn-danger btn-sm">
+                            Suspender
+                        </a>
+                    }
+
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+
+<hr />
+
+<!-- ================= Resultados de Exámenes ================= -->
+
+<h3>Resultados de Exámenes</h3>
+
+<a asp-action="AgregarExamen"
+   asp-route-id="@ViewBag.PacienteId"
+   class="btn btn-primary mb-3">
+    Agregar Examen
+</a>
+
+<table class="table table-striped table-bordered">
+
+    <thead>
+        <tr>
+            <th>Descripción</th>
+            <th>Médico</th>
+            <th>Fecha</th>
+            <th>Archivo</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var e in (List<ResultadoExamenMedico>)ViewBag.Examenes)
+        {
+            <tr>
+
+                <td>@e.Descripcion</td>
+
+                <td>@e.Usuario.Nombre</td>
+
+                <td>@e.FechaRegistro</td>
+
+                <td>
+
+                    <a asp-action="VerExamen"
+                       asp-route-id="@e.Id"
+                       class="btn btn-success btn-sm">
+                        Ver Archivo
+                    </a>
+
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+
+</table>
