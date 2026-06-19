@@ -109,10 +109,10 @@ namespace ProyectoExpedientePacientes.Controllers.Api
 
             var historial = _context.NotaClinica
                 .Where(h => h.PacienteId == pacienteId)
-                .Include(h => h.Medico)
+                .Include(h => h.Usuario)
                 .Select(h => new
                 {
-                    h.Medico.NombreCompleto,
+                    h.Usuario.Nombre,
                     h.Contenido,
                     h.FechaRegistro
                 })

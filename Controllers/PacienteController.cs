@@ -41,7 +41,7 @@ namespace ProyectoExpedientePacientes.Controllers
         {
             var historial = await _context.NotaClinica
                 .Where(n => n.PacienteId == id)
-                .Include(n => n.Medico)
+                .Include(n => n.Usuario)
                 .OrderByDescending(n => n.FechaRegistro)
                 .ToListAsync();
 
@@ -61,12 +61,12 @@ namespace ProyectoExpedientePacientes.Controllers
         [HttpPost]
         public async Task<IActionResult> AgregarNota(int id, string contenido)
         {
-            var medico = int.Parse(User.FindFirst("MedicoId")!.Value);
+            var usuarioId = int.Parse(User.FindFirst("UsuarioId")!.Value);
 
             var nota = new NotaClinica
             {
                 PacienteId = id,
-                MedicoId = medico,
+                UsuarioId = usuarioId,
                 Contenido = contenido,
                 FechaRegistro = DateTime.Now
             };

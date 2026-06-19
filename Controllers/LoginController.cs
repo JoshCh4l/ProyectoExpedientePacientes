@@ -20,6 +20,12 @@ namespace ProyectoExpedientePacientes.Controllers
 
         public IActionResult Index()
         {
+
+            if (User.Identity != null && User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
             return View();
         }
 
@@ -54,11 +60,6 @@ namespace ProyectoExpedientePacientes.Controllers
             new Claim("UsuarioId", usuario.Id.ToString())
 
         };
-
-            if (usuario.MedicoId.HasValue)
-            {
-                claims.Add(new Claim("MedicoId", usuario.MedicoId.Value.ToString()));
-            }
 
             var claimsIdentity = new ClaimsIdentity(
                 claims, CookieAuthenticationDefaults.AuthenticationScheme);

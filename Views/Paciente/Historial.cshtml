@@ -9,7 +9,8 @@
 <table id="tablaHistorial" class="table table-striped table-bordered">
     <thead>
         <tr>
-            <th>Médico</th>
+            <th>Usuario</th>
+            <th>Medico</th>
             <th>Contenido</th>
             <th>Fecha y Hora</th>
         </tr>
@@ -18,7 +19,8 @@
         @foreach (var nota in Model)
         {
             <tr>
-                <td>@nota.MedicoId</td>
+                <td>@nota.UsuarioId</td>
+                <td>@(nota.Usuario.MedicoId?.ToString() ?? "-- Hecho_Por_Administrador --")</td>
                 <td>@nota.Contenido</td>
                 <td>@nota.FechaRegistro.ToString("dd/MM/yyyy HH:mm")</td>
             </tr>
