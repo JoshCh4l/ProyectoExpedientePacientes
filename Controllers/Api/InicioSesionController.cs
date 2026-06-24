@@ -37,7 +37,15 @@ namespace ProyectoExpedientePacientes.Controllers.Api
             {
                 return Unauthorized(new
                 {
-                    mensaje = "Credenciales incorrectas"
+                    mensaje = "Usuario o Contrasenia Incorrectos"
+                });
+            }
+
+            if (usuario.Bloqueado)
+            {
+                return Unauthorized(new
+                {
+                    mensaje = "Usuario Bloqueado"
                 });
             }
 
