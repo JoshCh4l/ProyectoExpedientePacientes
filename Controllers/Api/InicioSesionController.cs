@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.EntityFrameworkCore;
 using ProyectoExpedientePacientes.Data;
 using ProyectoExpedientePacientes.Models;
 using System.IdentityModel.Tokens.Jwt;
@@ -25,7 +26,7 @@ namespace ProyectoExpedientePacientes.Controllers.Api
         }
 
         [HttpPost("login")]
-        public IActionResult Login(LoginDto dto)
+        public IActionResult Login([FromBody] LoginDto dto)
         {
             var usuario = _context.Usuario
                 .FirstOrDefault(p =>
@@ -46,6 +47,49 @@ namespace ProyectoExpedientePacientes.Controllers.Api
             {
                 token,
                 usuario.PacienteId
+            });
+        }
+
+        [HttpPost("registro")]
+        public async Task<IActionResult> Registro([FromBody] Usuario model)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            bool existeCorreo = await _context.Usuario
+                .AnyAsync(u => u.Correo == model.Correo);
+
+            if (existeCorreo)
+                return BadRequest("Ya existe un usuario con ese correo");
+
+            bool existeCedula = await _context.Usuario
+                .AnyAsync(u => u.Cedula == model.Cedula);
+
+            if (existeCedula)
+                return BadRequest("Ya existe un usuario con esa cedula");
+
+            var paciente = new Paciente();
+
+            _context.Paciente.Add(paciente);
+            await _context.SaveChangesAsync();
+
+            var usuario = new Usuario
+            {
+                Cedula = model.Cedula,
+                Nombre = model.Nombre,
+                Correo = model.Correo,
+                Contrasenia = model.Contrasenia, 
+                Rol = Roles.Paciente,
+                Bloqueado = false,
+                PacienteId = paciente.Id
+            };
+
+            _context.Usuario.Add(usuario);
+            await _context.SaveChangesAsync();
+
+            return Ok(new
+            {
+                mensaje = "Usuario registrado correctamente"
             });
         }
 
